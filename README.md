@@ -76,7 +76,7 @@
    
    A) StateFul component
     
-          ```
+          
           import React, { Component } from 'react';
           import { View, Text } from 'react-native';
           import PropTypes from 'prop-types';
@@ -97,11 +97,11 @@
               }
           }
 
-          ```
+          
     
    B) StateLess component
     
-          ```
+         
           import Reactfrom 'react';
            import { View, Text } from 'react-native';
           import PropTypes from 'prop-types';
@@ -118,7 +118,7 @@
             };
 
             export default Greeting;
-          ```
+          
    
 ### Editor Config - Padronização de código
     
