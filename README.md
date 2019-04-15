@@ -3,7 +3,7 @@
   
 ## Pré-requisitos  
 
-  1 - *[React Native Docs](https://facebook.github.io/react-native/docs/getting-started);
+  1 - *[React Native Docs](https://facebook.github.io/react-native/docs/getting-started);*
   
   2 - Configurar o ambiente para rodar o react native;
   
