@@ -74,51 +74,51 @@
    
    2 - Exemplo de utilização
    
-    A) StateFul component
+   A) StateFul component
     
-    ```
-    import React, { Component } from 'react';
-    import { View, Text } from 'react-native';
-    import PropTypes from 'prop-types';
+          ```
+          import React, { Component } from 'react';
+          import { View, Text } from 'react-native';
+          import PropTypes from 'prop-types';
 
-    export default class Greeting extends Component {
-      const { name } = this.props;
-        render() {
-          return (
-            <View>
-              <Text>Hello, {name}</Text>
-            </View>
+          export default class Greeting extends Component {
+            const { name } = this.props;
+              render() {
+                return (
+                  <View>
+                    <Text>Hello, {name}</Text>
+                  </View>
 
+                );
+              }
+
+              static propTypes = {
+                name: PropTypes.string
+              }
+          }
+
+          ```
+    
+   B) StateLess component
+    
+          ```
+          import Reactfrom 'react';
+           import { View, Text } from 'react-native';
+          import PropTypes from 'prop-types';
+
+          const Greeting = ({name}) => (
+                <View>
+                  <Text>Hello, {name}</Text>
+                </View>
           );
-        }
 
-        static propTypes = {
-          name: PropTypes.string
-        }
-    }
 
-    ```
-    
-    B) StateLess component
-    
-    ```
-    import Reactfrom 'react';
-     import { View, Text } from 'react-native';
-    import PropTypes from 'prop-types';
-    
-    const Greeting = ({name}) => (
-          <View>
-            <Text>Hello, {name}</Text>
-          </View>
-    );
-   
+          Greeting.propTypes = {
+            name: PropTypes.string
+            };
 
-    Greeting.propTypes = {
-      name: PropTypes.string
-      };
-      
-      export default Greeting;
-    ```
+            export default Greeting;
+          ```
    
 ### Editor Config - Padronização de código
     
