@@ -3,13 +3,13 @@
   
 ## Pré-requisitos  
 
-  1 - *[React Native Docs](https://facebook.github.io/react-native/docs/getting-started);*
+  1 - *[React Native Docs](https://facebook.github.io/react-native/docs/getting-started) Leia atentamente a documetação;*
   
-  2 - Configurar o ambiente para rodar o react native;
+  2 - Configurar o ambiente para rodar o react native, pode consultar diretamente na documentação;
   
-  3 - *React Native CLI - IMPORTANTE;*
+  3 - Instalar o *React Native CLI - IMPORTANTE;*
   
-  4 - Yarn para gerenciador de pacotes;
+  4 - Este projeto inicial utiliza o yarn para gerenciador de pacotes;
 
 
 ## Criando o projeto
