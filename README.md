@@ -1,4 +1,4 @@
-# React-Native-Start
+# React Native Start
   Estrutura inicial de um projeto React Native, já com ambiente de desenvolvimento configurado.
   
 ## Pré-requisitos  
