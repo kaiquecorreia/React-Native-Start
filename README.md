@@ -141,15 +141,15 @@
   
   2 - Executar o comando no terminal :
   
-    ```
+    
       yarn add reactotron-react-native
-    ```
+    
   
   3 - Criar pasta config dentro de src;
   
   4 - Criar arquivo ReactotronConfig.js dentro da pasta config com o seguinte conteúdo:
   
-    ```
+    
       import Reactotron from 'reactotron-react-native';
 
       if (__DEV__) {
@@ -160,11 +160,11 @@
         console.tron = tron;
         tron.clear();
       }
-    ```
+    
     
   5 - Importar dentro do arquivo src/index.js :
   
-      ```
+      
         import './config/ReactotronConfig';
 
         import React from 'react';
@@ -175,7 +175,7 @@
         ...
         ...
         ...
-      ```
+      
   
   6 - Verificar no aplicativo Reactotron se o App foi identificado;
   
@@ -185,27 +185,27 @@
   
   Colocar nas configurações do usuário do VSCode as seguinte linhas:
   
-      ```
+      
         ...
         "editor.formatOnSave": true,
         "prettier.eslintIntegration": true,
         ...
-      ```
+      
   
   1 - Executar comando no terminal:
   
-    ```
+    
       yarn add eslint -D
-    ```
+    
   2 - Executar comando no terminal: 
   
-    ```
+    
       yarn  eslint --init
-    ```
+    
     
   3 - Escolher seguintes opções:
   
-     ```
+     
        1 - To check syntax, find problems, and enforce code style
        2 - JavaScript modules(import/export)
        3 - React
@@ -215,23 +215,23 @@
        7 - JSON
        8 - Y enter
 
-     ```
+     
      
    4 - Deletar arquivo criado package-lock.json (Apenas se estiver utilizando yarn );
    
    5 - Executar no terminal  (Apenas se estiver utilizando yarn ):
    
-      ```
+      
         yarn
-      ```
+      
    
    6 - Executar no terminal:
-      ```
+      
       yarn add babel-eslint -D
-      ```
+      
    7 - Configurar arquivo .eslintrc.json como a seguir:
    
-      ```
+      
               
           {
             "parser": "babel-eslint",
@@ -272,23 +272,23 @@
             }
           }
       
-      ```
+      
       
 ### Import Resolver - Facilita a importação de arquivos na raiz do projeto, adicionando um prefixo:
 
    1 - Executar comando no terminal para adicionar o babel plugin root import: 
    
-        ```
+        
           yarn add babel-plugin-root-import -D
-        ```
+        
    2 - Executar comando no terminal para associar o babel plugin ao eslint: 
    
-        ```
+        
           yarn add eslint-plugin-import eslint-import-resolver-babel-plugin-root-import -D
-        ``` 
+         
    3 - Configurar o arquivo babel.config.js:
    
-        ```
+        
           module.exports = {
           presets: ['module:metro-react-native-babel-preset'],
           plugins: [
@@ -302,10 +302,10 @@
           ],
         };
 
-        ```
+        
    4 - Criar e Configurar o arquivo jsconfig.json para sugestões de importação:
    
-        ```
+        
           {
             "compilerOptions": {
               "baseUrl": ".",
@@ -314,7 +314,7 @@
               }
             }
           }
-        ```
+        
         
 ### React Dev Tools - Ferramenta para mostrar a árvore de elementos do app
 
@@ -330,7 +330,7 @@
    
    4 - Configurar o arquivo package.json, dentro de scripts, como abaixo:
    
-   ```
+   
          ...
               "scripts": {
               "start": "node node_modules/react-native/local-cli/cli.js start",
@@ -338,7 +338,7 @@
               "react-devtool": "react-devtools"
             },
         ...
-   ```
+   
    
    5 - Acessar a pasta do projeto e rodar o comando yarn run react-devtool
    
