@@ -275,7 +275,8 @@
       
       
 ### Import Resolver - Facilita a importação de arquivos na raiz do projeto, adicionando um prefixo:
-
+  *** Aviso - Tive alguns problemas ao utilizar essa biblioteca, mas vou colocar como adiciona-la ao projeto mesmo assim. Caso tenha           algum problema em seu projeto remova-a completamente e teste. ***
+  
    1 - Executar comando no terminal para adicionar o babel plugin root import: 
    
         
