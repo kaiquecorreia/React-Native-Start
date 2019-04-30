@@ -149,11 +149,17 @@
   
   4 - Criar arquivo ReactotronConfig.js dentro da pasta config com o seguinte conteúdo:
   
-    
+      import { Platform } from 'react-native';   
       import Reactotron from 'reactotron-react-native';
-
+  
       if (__DEV__) {
-        const tron = Reactotron.configure()
+         // const tron = Reactotron.configure() 
+         
+         // Tested on Mac OS for use android and ios emulator
+            const tron = Reactotron.configure(
+            Platform.OS === 'ios' ? {} : { host: '10.0.3.2' }, 
+          )
+         
           .useReactNative() 
           .connect();
 
